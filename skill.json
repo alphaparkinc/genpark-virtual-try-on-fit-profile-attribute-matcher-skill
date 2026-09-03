@@ -1,0 +1,39 @@
+{
+  "name": "genpark-virtual-try-on-fit-profile-attribute-matcher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Virtual Try-On (VTO) sizing attribute matcher translating body metrics and garment stretch matrices into optimal size choices.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "virtual-try-on",
+    "vto-fit",
+    "google-commerce",
+    "sizing-advisor",
+    "apparel-ai"
+  ],
+  "inputs": {
+    "user_body_metrics": {
+      "type": "object"
+    },
+    "garment_size_chart_matrix": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "vto_match_id": {
+      "type": "string"
+    },
+    "recommended_size": {
+      "type": "string"
+    },
+    "fit_confidence_score_pct": {
+      "type": "number"
+    },
+    "vto_dossier_telemetry_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
